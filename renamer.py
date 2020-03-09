@@ -33,7 +33,6 @@ def list_folder(input_folder: str):
     logger = logging.getLogger(__name__)
     logger.debug("Listing content of {}".format(input_folder))
     logger.debug("Not implemented")
-    return l
 
     return []
 
@@ -45,6 +44,7 @@ if __name__=="__main__":
     args = parser.parse_args()
 
     input_folder = args.input_folder
+    output_folder = args.output_folder
 
     logger.info("Listing image files from {}:".format(input_folder))
 
